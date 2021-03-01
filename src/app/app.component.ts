@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { Observable } from 'rxjs';
-import lessonsData from '../assets/lessons_data.json';
+
 
 @Component({
   selector: 'app-root',
@@ -15,7 +14,7 @@ export class AppComponent {
   
   constructor(){
     //console.log(lessonsData[0].dateLesson);
-    this.lessons = lessonsData;
+    
   }
 
 }

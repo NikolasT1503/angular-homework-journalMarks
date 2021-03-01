@@ -1,0 +1,41 @@
+<p></p>
+<div class="inputBox">
+  <h3>Добавление урока:</h3>
+  <form class="addLesson-form">
+  
+    <mat-form-field class="addLesson-full-width">
+      <mat-label>Id</mat-label>
+      <input matInput>
+    </mat-form-field>
+
+    <mat-form-field appearance="fill">
+      <mat-label>Выберите дату урока</mat-label>
+      <input matInput [matDatepicker]="picker">
+      <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  
+    <mat-form-field class="addLesson-full-width">
+      <mat-label>Урок</mat-label>
+      <input matInput placeholder="Ex. San Francisco">
+    </mat-form-field>
+
+    <mat-form-field class="addLesson-full-width">
+      <mat-label>Тема</mat-label>
+      <input matInput placeholder="Ex. San Francisco">
+    </mat-form-field>
+
+    <mat-form-field class="addLesson-full-width">
+      <mat-label>Домашнее задание</mat-label>
+      <input matInput placeholder="Ex. San Francisco">
+    </mat-form-field>
+
+    <mat-form-field class="addLesson-full-width">
+      <mat-label>Примечание</mat-label>
+      <input matInput placeholder="">
+    </mat-form-field>
+
+    <button (click)="addLesson()">Добавить</button>
+  </form>
+</div>
+

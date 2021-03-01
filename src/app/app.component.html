@@ -1,5 +1,18 @@
+<!-- <div id="inputForm">
+  <app-input-form></app-input-form>
+</div>
+<div id="tableLessons">
+  <table-lessons></table-lessons>
+</div> -->
+<div id="table-marks">
+  <app-marks></app-marks>
+</div>
+
+
 <!-- <pre>{{lessons | json }}</pre> -->
-<div>
+
+
+<!-- <div>
   <table>
     <tr>
       <th class="titleCell" align="center">Номер</th>
@@ -9,7 +22,19 @@
       <th class="titleCell" align="center">Домашнее задание</th>
       <th class="titleCell" align="center">Примечание</th>
     </tr>
+    <tr *ngFor="let lesson of lessons">
+        <td>{{lesson.id}}</td>
+        <td>{{lesson.dateLesson}}</td>
+        <td>{{lesson.lesson}}</td>
+        <td>{{lesson.theme}}</td>
+        <td>{{lesson.homework}}</td>
+        <td>{{lesson.note}}</td>
+    </tr>
     <app-lessons *ngFor="let lesson of lessons" [lessonIn]="lesson"></app-lessons>
   </table>
-</div>
+</div> -->
+
+<!-- <div>
+
+</div> -->
 

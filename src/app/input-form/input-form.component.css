@@ -1,0 +1,20 @@
+.addLesson-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+  }
+  
+  .addLesson-full-width {
+    width: 100%;
+  }
+
+  .inputBox {
+    padding: 10px;
+    border: 1px;
+    border-color: rgb(38, 39, 39);
+    border-style: solid;
+  }
+  
+  td {
+    padding-right: 8px;
+  }
